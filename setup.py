@@ -16,7 +16,7 @@ def main():
     username = input("What is your Codefun username?\n")
     pwd = input("What is the password?\n")
 
-    filepath = ".\codefunpython"
+    filepath = ".\sourcecode"
 
     lang = input(
         "What is the default submitting language? (C++/Python3/Pascal/NAsm)\n")
