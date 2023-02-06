@@ -30,7 +30,7 @@ if confirm == "y" or confirm == "yes":
         try:
             Tools.submitfile(driver, f"{FILE_PATH}\{file}")
 
-            timeSubmit = random.randint(90, 300)
+            timeSubmit = random.randint(90, 120)
             print(f"{file} submitted, waiting for {timeSubmit} seconds")
             time.sleep(timeSubmit)
         except KeyboardInterrupt:

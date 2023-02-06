@@ -21,7 +21,7 @@ def main():
     lang = input(
         "What is the default submitting language? (C++/Python3/Pascal/NAsm)\n")
 
-    chromedriverpath = ".\chromedriver_win32/chromedriver.exe"
+    chromedriverpath = ".\chromedriver_win32\chromedriver.exe"
     with open(".env", "w") as f:
         f.write(f"CF_USERNAME = {username}\n")
         f.write(f"CF_PASSWORD = {pwd}\n")
