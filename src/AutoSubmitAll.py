@@ -3,6 +3,7 @@ import time
 from dotenv import load_dotenv
 from os import getenv
 from requests.exceptions import ConnectionError
+import random
 
 load_dotenv()
 FILE_PATH = getenv("PATH_TO_FOLDER")
@@ -30,7 +31,8 @@ if confirm == "y" or confirm == "yes":
             Tools.submitfile(driver, f"{FILE_PATH}\{file}")
 
             print(f"{file} submitted, waiting for 90 secs")
-            time.sleep(90)
+            timeSubmit = random.randint(90, 300)
+            time.sleep(timeSubmit)
         except KeyboardInterrupt:
             halt = input(
                 "Sleep period interrupted, halt program? (y/n) ").lower()
