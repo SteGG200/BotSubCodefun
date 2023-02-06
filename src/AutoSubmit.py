@@ -10,8 +10,8 @@ driver = Tools.setup()
 for i in tasks:
     try:
         Tools.submit(driver, i, language)
-        print(f"{i} submitted, waiting for 90 secs")
         timeSubmit = random.randint(90, 300)
+        print(f"{i} submitted, waiting for {timeSubmit} seconds")
         time.sleep(timeSubmit)
     except KeyboardInterrupt:
         print("Sleep period interrupted, force submitting next file")
